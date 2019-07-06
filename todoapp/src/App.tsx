@@ -35,7 +35,13 @@ function App(): JSX.Element {
                 </form>
                 <section className="mt-5">
                     <List data={todos}></List>
+                    {(todos.length) ? <button className="btn btn-danger mt-2 push-sm-11">
+                        delete
+                    </button> : null
+                    }
                 </section>
+
+
             </div>
         </>
     );

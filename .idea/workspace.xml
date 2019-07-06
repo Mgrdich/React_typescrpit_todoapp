@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec45a39-a302-48f6-a12a-efab92b6bc89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todoapp/src/components/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/components/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/list.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="703">
+              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -33,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="190">
+              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -92,8 +89,8 @@
         <option value="$PROJECT_DIR$/todoapp/.gitignore" />
         <option value="$PROJECT_DIR$/todoapp/src/index.css" />
         <option value="$PROJECT_DIR$/todoapp/tsconfig.json" />
-        <option value="$PROJECT_DIR$/todoapp/src/components/list.tsx" />
         <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
+        <option value="$PROJECT_DIR$/todoapp/src/components/list.tsx" />
       </list>
     </option>
   </component>
@@ -168,12 +165,12 @@
       <workItem from="1562412438649" duration="2780000" />
       <workItem from="1562415655110" duration="241000" />
       <workItem from="1562416854206" duration="14000" />
-      <workItem from="1562438793324" duration="2952000" />
+      <workItem from="1562438793324" duration="4293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9899000" />
+    <option name="totallyTimeSpent" value="11240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="959" height="1051" extended-state="4" />
@@ -193,7 +190,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25894737" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -385,20 +382,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="703">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
         </state>
       </provider>
     </entry>

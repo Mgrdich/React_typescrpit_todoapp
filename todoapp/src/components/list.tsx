@@ -5,8 +5,13 @@ const List = ({data}: { data: any }) => {
 
         <ul className="list-group">
             {
-                data.map((ele: string | number, index: number) => {
-                    return <li className="list-group-item">{ele}</li>
+                data.map((ele: { [U: string]: string }, index: number) => {
+                    return (
+                        <li
+                            className="list-group-item mb-1"
+                            key={index}
+                        >{ele.text}</li>
+                    )
                 })
             }
         </ul>
