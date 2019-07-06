@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(): JSX.Element {
+    const [value, setValue] = useState<string>("");
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+    };
+    return (
+        <>
+            <div>
+                <h1>Todo List</h1>
+                <form action="">
+                    <input type="text" required className="form-control" value={value} onChange={e => setValue(e.target.value)}/>
+                    <button type="submit" className="btn btn-info mt-2">Add Todo</button>
+                </form>
+            </div>
+        </>
+    );
 }
 
 export default App;
