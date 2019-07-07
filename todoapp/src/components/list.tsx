@@ -1,6 +1,7 @@
 import React from 'react';
 
 const List = ({data}: { data: any }) => {
+    let classList: string = 'list-group-item mb-1 ';
     return (
 
         <ul className="list-group">
@@ -8,9 +9,11 @@ const List = ({data}: { data: any }) => {
                 data.map((ele: { [U: string]: string }, index: number) => {
                     return (
                         <li
-                            className="list-group-item mb-1"
+                            className={classList + (ele.complete ? 'line-over' : '')}
                             key={index}
-                        >{ele.text}</li>
+
+                        >{ele.text}{(ele.complete) ?
+                            null : <i className="fa fa-check withinListRight"/>}</li>
                     )
                 })
             }

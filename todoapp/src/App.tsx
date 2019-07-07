@@ -24,18 +24,27 @@ function App(): JSX.Element {
         const newTodos: ITodo[] = [...todos, {text, complete: false}];
         setTodos(newTodos);
     };
+
+    const completeTodo = function (index: number): void {
+        const newTodos: ITodo[] = todos;
+        newTodos[index].complete = !newTodos[index].complete;
+        setTodos(newTodos);
+    };
     return (
         <>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" required className="form-control" value={value}
-                           onChange={e => setValue(e.target.value)}/>
-                    <button type="submit" className="btn btn-danger mt-2">Add Todo</button>
-                </form>
-                <section className="mt-5">
+                <div className="clearfix">
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" required className="form-control" value={value}
+                               onChange={e => setValue(e.target.value)}/>
+                        <button type="submit" className="btn btn-danger mt-2 pull-right">Add Todo</button>
+                    </form>
+                </div>
+
+                <section className="mt-20 ">
                     <List data={todos}></List>
-                    {(todos.length) ? <button className="btn btn-danger mt-2 push-sm-11">
+                    {(todos.length) ? <button className="btn btn-danger mt-2 pull-right">
                         delete
                     </button> : null
                     }
