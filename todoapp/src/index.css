@@ -12,11 +12,15 @@ button {
 .pull-left {
     float: left;
 }
-.line-over {
+.line-over,.line-over:hover {
     text-decoration: line-through;
 }
 .withinListRight {
-    right: 10px;
+    right: 50px;
+    position: absolute;
+}
+.withinListRight1 {
+    right: 20px;
     position: absolute;
 }
 button {

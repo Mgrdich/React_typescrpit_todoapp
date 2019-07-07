@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import List from "./components/list"
+import {func} from "prop-types";
 
 
 type FormElem = React.FormEvent<HTMLFormElement>;
@@ -26,9 +27,19 @@ function App(): JSX.Element {
     };
 
     const completeTodo = function (index: number): void {
-        const newTodos: ITodo[] = todos;
+        const newTodos: ITodo[] = [...todos];
         newTodos[index].complete = !newTodos[index].complete;
         setTodos(newTodos);
+    };
+    const deleteTodo = function (index: number):void {
+        let Filtered = todos.filter((item, ind) => {
+            return index !== ind;
+        });
+        console.log(Filtered);
+        setTodos(Filtered);
+    };
+    const deleteAll = function () {
+      setTodos([]);
     };
     return (
         <>
@@ -43,8 +54,12 @@ function App(): JSX.Element {
                 </div>
 
                 <section className="mt-20 ">
-                    <List data={todos}></List>
-                    {(todos.length) ? <button className="btn btn-danger mt-2 pull-right">
+                    <List data={todos} handleCheck={completeTodo} handleDelete={deleteTodo}/>
+                    {(todos.length) ?
+                        <button
+                        className="btn btn-danger mt-2 pull-right"
+                        onClick={deleteAll}
+                        >
                         delete
                     </button> : null
                     }

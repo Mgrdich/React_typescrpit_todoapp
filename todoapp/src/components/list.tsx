@@ -1,6 +1,6 @@
 import React from 'react';
 
-const List = ({data}: { data: any }) => {
+const List = ({data, handleCheck, handleDelete}: { data: any, handleCheck: Function, handleDelete: Function }) => {
     let classList: string = 'list-group-item mb-1 ';
     return (
 
@@ -13,7 +13,11 @@ const List = ({data}: { data: any }) => {
                             key={index}
 
                         >{ele.text}{(ele.complete) ?
-                            null : <i className="fa fa-check withinListRight"/>}</li>
+                            null :
+                            <>
+                                <i className="fa fa-check withinListRight" onClick={() => handleCheck(index)}/>
+                                <i className="fa fa-times withinListRight1" onClick={() => handleDelete(index)}/>
+                            </>}</li>
                     )
                 })
             }
