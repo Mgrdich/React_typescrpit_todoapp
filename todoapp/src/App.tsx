@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import List from "./components/list"
-import {func} from "prop-types";
-
+import Filter from "./components/filter";
 
 type FormElem = React.FormEvent<HTMLFormElement>;
 
@@ -45,6 +44,7 @@ function App(): JSX.Element {
         <>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
+                <Filter/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>
                         <input type="text" required className="form-control" value={value}

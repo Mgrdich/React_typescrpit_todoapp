@@ -1,32 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
-body  {
+
+body {
     font-family: 'Indie Flower', cursive !important;
     background-color: #1d1e1f !important;
 }
+
 button {
-    font-family: 'Indie Flower',cursive !important;;
+    font-family: 'Indie Flower', cursive !important;;
 }
+
 .pull-right {
     float: right;
 }
+
 .pull-left {
     float: left;
 }
-.line-over,.line-over:hover {
+
+.line-over, .line-over:hover {
     text-decoration: line-through;
 }
+
 .withinListRight {
     right: 50px;
     position: absolute;
 }
+
 .withinListRight1 {
     right: 20px;
     position: absolute;
 }
+
 button {
     min-width: 98.9931px;
 }
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.my-card ul {
+    display: flex;
+    list-style: none;
+}
+
+.my-card ul li {
+    background-color: #ffffff;
+    border: 1px solid darkred;
+    color:darkred;
+    border-radius: 5px;
+    padding:20px;
+    min-width: 180px;
+    font-size: 26px;
+}
+.my-card ul li .active {
+    background-color: darkred;
+    border: 1px solid #1d1e1f;
+    color:#1d1e1f;
+
 }
