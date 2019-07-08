@@ -1,18 +1,16 @@
 import React from 'react';
 
-const Filter = (): JSX.Element => {
+const Filter = ({data}: { data: string[] }): JSX.Element => {
     return (
         <div className="my-card">
             <ul>
-                <li>
-                    Monday
-                </li>
-                <li>
-                    Tuesday
-                </li>
-                <li>
-                    BBB
-                </li>
+                {
+                    data.map((item)=> {
+                        return (
+                          <li>{item}</li>
+                        );
+                    })
+                }
             </ul>
         </div>);
 };

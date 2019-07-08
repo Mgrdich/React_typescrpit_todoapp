@@ -53,10 +53,15 @@ button {
     padding:20px;
     /*min-width: 180px;*/
     font-size: 26px;
+    cursor: pointer;
+}
+.my-card ul li:hover {
+    background-color: darkred;
+    border: 1px solid #ffffff;
+    color:#ffffff;
 }
 .my-card ul li .active {
     background-color: darkred;
     border: 1px solid #1d1e1f;
     color:#1d1e1f;
-
 }
