@@ -42,6 +42,7 @@ button {
 .my-card ul {
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
 
 .my-card ul li {
@@ -50,7 +51,7 @@ button {
     color:darkred;
     border-radius: 5px;
     padding:20px;
-    min-width: 180px;
+    /*min-width: 180px;*/
     font-size: 26px;
 }
 .my-card ul li .active {

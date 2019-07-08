@@ -1,0 +1,42 @@
+[
+  {
+    "text": "doing laundary",
+    "complete": true,
+    "week": "Monday"
+  },
+  {
+    "text": "doing the dishes",
+    "complete": false,
+    "week": "Monday"
+  },
+  {
+    "text": "doing laundary with mom",
+    "complete": false,
+    "week": "Monday"
+  },
+  {
+    "text": "doing the dishes with dad",
+    "complete": false,
+    "week": "Tuesday"
+  },
+  {
+    "text": "doing laundary with baby",
+    "complete": false,
+    "week": "Tuesday"
+  },
+  {
+    "text": "doing the dishes with children",
+    "complete": false,
+    "week": "Friday"
+  },
+  {
+    "text": "partying way to hard",
+    "complete": false,
+    "week": "Sunday"
+  },
+  {
+    "text": "partying at the opera",
+    "complete": false,
+    "week": "Sunday"
+  }
+]

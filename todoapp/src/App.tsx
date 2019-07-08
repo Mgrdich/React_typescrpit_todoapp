@@ -34,7 +34,6 @@ function App(): JSX.Element {
         let Filtered = todos.filter((item, ind) => {
             return index !== ind;
         });
-        console.log(Filtered);
         setTodos(Filtered);
     };
     const deleteAll = function () {
