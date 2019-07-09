@@ -1,13 +1,16 @@
 import React from 'react';
 
-const Filter = ({data}: { data: string[] }): JSX.Element => {
+const Filter = ({data, activeDay,handleClick}: { data: string[], activeDay: string,handleClick:Function }): JSX.Element => {
     return (
         <div className="my-card">
             <ul>
                 {
-                    data.map((item)=> {
+                    data.map((item) => {
                         return (
-                          <li>{item}</li>
+                            <li
+                                className={item === activeDay ? 'active' : ''}
+                                onClick={()=>handleClick(item)}
+                            >{item}</li>
                         );
                     })
                 }

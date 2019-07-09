@@ -60,8 +60,8 @@ button {
     border: 1px solid #ffffff;
     color:#ffffff;
 }
-.my-card ul li .active {
+.my-card ul li.active {
     background-color: darkred;
     border: 1px solid #1d1e1f;
-    color:#1d1e1f;
+    color:#ffffff;
 }

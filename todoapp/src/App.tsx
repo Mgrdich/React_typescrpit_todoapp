@@ -5,7 +5,7 @@ import JSON from "./db.json";
 
 type FormElem = React.FormEvent<HTMLFormElement>;
 
-interface ITodo {
+export interface ITodo {
     text: string,
     complete: boolean,
     week: string
@@ -43,14 +43,14 @@ function App(): JSX.Element {
     const deleteAll = function () {
         setTodos([]);
     };
-    const handleClick = function (weekday:string) {
-        console.log(weekday);
+    const handleClick = function (weekday:string):void {
+        setWeekDay(weekday);
     };
     return (
         <>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
-                <Filter  data={Weekdays}/>
+                <Filter  data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>
                         <input type="text" required className="form-control" value={value}
