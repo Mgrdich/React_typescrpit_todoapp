@@ -60,7 +60,7 @@ function App(): JSX.Element {
                 </div>
 
                 <section className="mt-20 ">
-                    <List data={todos} handleCheck={completeTodo} handleDelete={deleteTodo}/>
+                    <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}/>
                     {(todos.length) ?
                         <button
                             className="btn btn-danger mt-2 pull-right"
