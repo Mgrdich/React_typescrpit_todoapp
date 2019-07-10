@@ -14,7 +14,7 @@ export interface ITodo {
 
 function App(): JSX.Element {
     const [value, setValue] = useState<string>("");
-    const [todos, setTodos] = useState<ITodo[]>([]);
+    const [todos, setTodos] = useState<ITodo[]>(JSON);
     const Weekdays:string[] = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
     const [weekDay, setWeekDay] = useState<string>(Weekdays[0]);
 
