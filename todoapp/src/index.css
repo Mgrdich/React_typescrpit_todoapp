@@ -49,20 +49,30 @@ button {
 .my-card ul li {
     background-color: #ffffff;
     border: 1px solid darkred;
-    color:darkred;
+    color: darkred;
     border-radius: 5px;
-    padding:20px;
+    padding: 20px;
     /*min-width: 180px;*/
     font-size: 26px;
     cursor: pointer;
 }
+
 .my-card ul li:hover {
     background-color: darkred;
     border: 1px solid #ffffff;
-    color:#ffffff;
+    color: #ffffff;
 }
+
 .my-card ul li.active {
     background-color: darkred;
     border: 1px solid #1d1e1f;
-    color:#ffffff;
+    color: #ffffff;
+}
+
+.list-group-item li {
+    font-size: 22px;
+}
+
+.list-group-item i {
+    cursor: pointer;
 }
