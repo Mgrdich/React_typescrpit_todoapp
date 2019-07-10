@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import List from "./components/list"
 import Filter from "./components/filter";
 import JSON from "./db.json";
+import {CountingProperty} from "./helper/Counting";
 
 type FormElem = React.FormEvent<HTMLFormElement>;
 
@@ -15,7 +16,7 @@ export interface ITodo {
 function App(): JSX.Element {
     const [value, setValue] = useState<string>("");
     const [todos, setTodos] = useState<ITodo[]>(JSON);
-    const Weekdays:string[] = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const [weekDay, setWeekDay] = useState<string>(Weekdays[0]);
 
     const handleSubmit = function (e: FormElem): void {
@@ -43,14 +44,14 @@ function App(): JSX.Element {
     const deleteAll = function () {
         setTodos([]);
     };
-    const handleClick = function (weekday:string):void {
+    const handleClick = function (weekday: string): void {
         setWeekDay(weekday);
     };
     return (
         <>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
-                <Filter  data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
+                <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>
                         <input type="text" required className="form-control" value={value}
@@ -61,7 +62,7 @@ function App(): JSX.Element {
 
                 <section className="mt-20 ">
                     <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}/>
-                    {(todos.length) ?
+                    {(CountingProperty(todos, weekDay, "week")) ?
                         <button
                             className="btn btn-danger mt-2 pull-right"
                             onClick={deleteAll}
