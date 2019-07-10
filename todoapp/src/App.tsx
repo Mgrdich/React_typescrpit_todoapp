@@ -41,8 +41,11 @@ function App(): JSX.Element {
         });
         setTodos(Filtered);
     };
-    const deleteAll = function () {
-        setTodos([]);
+    const deleteAll = function (activeWeek: string): void {
+        let Filtered = todos.filter((item) => {
+            return item.week !== activeWeek;
+        });
+        setTodos(Filtered);
     };
     const handleClick = function (weekday: string): void {
         setWeekDay(weekday);
@@ -65,7 +68,7 @@ function App(): JSX.Element {
                     {(CountingProperty(todos, weekDay, "week")) ?
                         <button
                             className="btn btn-danger mt-2 pull-right"
-                            onClick={deleteAll}
+                            onClick={() => deleteAll(weekDay)}
                         >
                             delete
                         </button> : null
