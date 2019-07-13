@@ -69,7 +69,7 @@ button {
     color: #ffffff;
 }
 
-.list-group-item li {
+li.list-group-item  {
     font-size: 22px;
 }
 

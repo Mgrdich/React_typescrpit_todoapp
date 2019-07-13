@@ -35,9 +35,13 @@ function App(): JSX.Element {
         newTodos[index].complete = !newTodos[index].complete;
         setTodos(newTodos);
     };
-    const deleteTodo = function (index: number): void {
+    const deleteTodo = function (index: number,activeWeek:string): void {
         let Filtered = todos.filter((item, ind) => {
-            return index !== ind;
+            if(activeWeek!=='All') {
+                return index !== ind;
+            }else {
+              return 1;
+            }
         });
         setTodos(Filtered);
     };

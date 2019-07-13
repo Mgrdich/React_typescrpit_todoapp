@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec45a39-a302-48f6-a12a-efab92b6bc89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/components/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
-              <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -77,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -86,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+            <state relative-caret-position="554">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -141,9 +139,9 @@
         <option value="$PROJECT_DIR$/todoapp/src/components/filter.tsx" />
         <option value="$PROJECT_DIR$/todoapp/tsconfig.json" />
         <option value="$PROJECT_DIR$/todoapp/src/helper/Counting.ts" />
-        <option value="$PROJECT_DIR$/todoapp/src/index.css" />
-        <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
         <option value="$PROJECT_DIR$/todoapp/src/components/list.tsx" />
+        <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
+        <option value="$PROJECT_DIR$/todoapp/src/index.css" />
       </list>
     </option>
   </component>
@@ -245,12 +243,12 @@
       <workItem from="1562609866675" duration="8286000" />
       <workItem from="1562707012340" duration="1157000" />
       <workItem from="1562784388200" duration="4620000" />
-      <workItem from="1563040322189" duration="2400000" />
+      <workItem from="1563040322189" duration="3995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37287000" />
+    <option name="totallyTimeSpent" value="38882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1052" extended-state="6" />
@@ -446,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todoapp/src/helper/Counting.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -484,20 +475,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
+    <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="554">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
         </state>
       </provider>
     </entry>
