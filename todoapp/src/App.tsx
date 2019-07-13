@@ -16,7 +16,7 @@ export interface ITodo {
 function App(): JSX.Element {
     const [value, setValue] = useState<string>("");
     const [todos, setTodos] = useState<ITodo[]>(JSON);
-    const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday','All'];
     const [weekDay, setWeekDay] = useState<string>(Weekdays[0]);
 
     const handleSubmit = function (e: FormElem): void {

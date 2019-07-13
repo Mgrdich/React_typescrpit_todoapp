@@ -9,7 +9,7 @@ const List = ({data, handleCheck, handleDelete, activeDay}:
         let elementWeek:number;
 
         return (data.map((ele: { [U: string]: string }, index: number) => {
-            if (ele.week === activeDay) {
+            if (ele.week === activeDay || activeDay ==='All') {
                 return (
                     <li
                         className={classList + (ele.complete ? 'line-over' : '')}
