@@ -14,10 +14,13 @@ export interface ITodo {
 
 
 function App(): JSX.Element {
+
     const [value, setValue] = useState<string>("");
     const [todos, setTodos] = useState<ITodo[]>(JSON);
     const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday','All'];
     const [weekDay, setWeekDay] = useState<string>(Weekdays[0]);
+
+    const [blueMood,setBlueMood] = useState<boolean>(true);
 
     const handleSubmit = function (e: FormElem): void {
         e.preventDefault();
@@ -55,7 +58,7 @@ function App(): JSX.Element {
         setWeekDay(weekday);
     };
     return (
-        <>
+        <div className={"main "+(blueMood ? "blueMood":"darkMood")}>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
                 <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
@@ -81,7 +84,7 @@ function App(): JSX.Element {
 
 
             </div>
-        </>
+        </div>
     );
 }
 

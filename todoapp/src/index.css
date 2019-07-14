@@ -2,6 +2,16 @@
 
 body {
     font-family: 'Indie Flower', cursive !important;
+    height:100%
+}
+body .main {
+    height:100vh;
+}
+body div.blueMood {
+    background-color: #025aa5 !important;
+
+}
+body div.darkMood {
     background-color: #1d1e1f !important;
 }
 
@@ -76,3 +86,4 @@ li.list-group-item  {
 .list-group-item i {
     cursor: pointer;
 }
+
