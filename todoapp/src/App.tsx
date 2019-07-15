@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import List from "./components/list"
 import Filter from "./components/filter";
-import JSON from "./db.json";
+import JSON1 from "./db.json";
 import {CountingProperty} from "./helper/Counting";
 
 type FormElem = React.FormEvent<HTMLFormElement>;
@@ -14,13 +14,39 @@ export interface ITodo {
 
 
 function App(): JSX.Element {
-
     const [value, setValue] = useState<string>("");
-    const [todos, setTodos] = useState<ITodo[]>(JSON);
-    const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday','All'];
+    const [todos, setTodos] = useState<ITodo[]>(JSON1);
+    const Weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All'];
     const [weekDay, setWeekDay] = useState<string>(Weekdays[0]);
 
-    const [blueMood,setBlueMood] = useState<boolean>(true);
+    const [blueMode, setblueMode] = useState<boolean>(getInitialMode());
+
+    useEffect(() => {
+        localStorage.setItem("blue", JSON.stringify(blueMode));
+    }, [blueMode]);
+
+
+    function getInitialMode(): boolean {
+        const isReturningUser = "blue" in localStorage;
+        const saveMode = localStorage.getItem("blue") == 'true';
+        const userPrefer = gerPrefColorScheme();
+        if (isReturningUser) {
+            return saveMode;
+        } else if (userPrefer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function gerPrefColorScheme() {
+        if (!window.matchMedia) return;
+        return window.matchMedia("(prefers-color-scheme: dark)");
+    }
+
+
+    const ColorMode = (blueMode ? "blueMode" : "darkMood");
+    const btnMode = (ColorMode === "blueMode" ? "btn-warning" : "btn-danger");
 
     const handleSubmit = function (e: FormElem): void {
         e.preventDefault();
@@ -38,12 +64,12 @@ function App(): JSX.Element {
         newTodos[index].complete = !newTodos[index].complete;
         setTodos(newTodos);
     };
-    const deleteTodo = function (index: number,activeWeek:string): void {
+    const deleteTodo = function (index: number, activeWeek: string): void {
         let Filtered = todos.filter((item, ind) => {
-            if(activeWeek!=='All') {
+            if (activeWeek !== 'All') {
                 return index !== ind;
-            }else {
-              return 1;
+            } else {
+                return 1;
             }
         });
         setTodos(Filtered);
@@ -58,23 +84,23 @@ function App(): JSX.Element {
         setWeekDay(weekday);
     };
     return (
-        <div className={"main "+(blueMood ? "blueMood":"darkMood")}>
+        <div className={`main ${ColorMode}`}>
             <div className="container">
                 <h1 className="text-danger">Todo List</h1>
-                <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
+                <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick} colorMode={ColorMode}/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>
                         <input type="text" required className="form-control" value={value}
                                onChange={e => setValue(e.target.value)}/>
-                        <button type="submit" className="btn btn-danger mt-2 pull-right">Add Todo</button>
+                        <button type="submit" className={`btn ${btnMode} mt-2 pull-right`}>Add Todo</button>
                     </form>
                 </div>
 
                 <section className="mt-20 ">
-                    <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}/>
+                    <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo} colorMode={ColorMode}/>
                     {(CountingProperty(todos, weekDay, "week")) ?
                         <button
-                            className="btn btn-danger mt-2 pull-right"
+                            className={`btn ${btnMode} mt-2 pull-right`}
                             onClick={() => deleteAll(weekDay)}
                         >
                             delete

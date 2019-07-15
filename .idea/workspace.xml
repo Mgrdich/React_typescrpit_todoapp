@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec45a39-a302-48f6-a12a-efab92b6bc89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/components/filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/filter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/components/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state relative-caret-position="344">
+              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -52,11 +53,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todoapp/src/components/filter.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="1900">
+              <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -75,7 +94,11 @@
     <findStrings>
       <find>useSta</find>
       <find>danger</find>
+      <find>blueMood</find>
     </findStrings>
+    <replaceStrings>
+      <replace>blueMode</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/todoapp/node_modules/bootstrap-css/lib</dir>
     </dirStrings>
@@ -92,16 +115,16 @@
         <option value="$PROJECT_DIR$/todoapp/public/index.html" />
         <option value="$PROJECT_DIR$/todoapp/src/index.js" />
         <option value="$PROJECT_DIR$/todoapp/src/db.json" />
-        <option value="$PROJECT_DIR$/todoapp/src/components/filter.tsx" />
         <option value="$PROJECT_DIR$/todoapp/tsconfig.json" />
         <option value="$PROJECT_DIR$/todoapp/src/helper/Counting.ts" />
+        <option value="$PROJECT_DIR$/todoapp/src/index.css" />
         <option value="$PROJECT_DIR$/todoapp/src/components/list.tsx" />
         <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
-        <option value="$PROJECT_DIR$/todoapp/src/index.css" />
+        <option value="$PROJECT_DIR$/todoapp/src/components/filter.tsx" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="959" />
     <option name="height" value="1051" />
   </component>
@@ -200,15 +223,15 @@
       <workItem from="1562707012340" duration="1157000" />
       <workItem from="1562784388200" duration="4620000" />
       <workItem from="1563040322189" duration="4105000" />
-      <workItem from="1563140534980" duration="1069000" />
+      <workItem from="1563140534980" duration="7362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40061000" />
+    <option name="totallyTimeSpent" value="46354000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="959" height="1051" extended-state="4" />
+    <frame x="0" y="-1" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23357664" />
@@ -225,7 +248,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14526317" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.086225025" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -387,20 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/components/filter.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todoapp/src/db.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -439,20 +448,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoapp/src/components/list.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="344">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/index.css">
+    <entry file="file://$PROJECT_DIR$/todoapp/src/components/filter.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="190">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
         </state>
       </provider>
     </entry>

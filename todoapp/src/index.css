@@ -7,7 +7,7 @@ body {
 body .main {
     height:100vh;
 }
-body div.blueMood {
+body div.blueMode {
     background-color: #025aa5 !important;
 
 }
@@ -56,7 +56,7 @@ button {
     flex-wrap: wrap;
 }
 
-.my-card ul li {
+.my-card ul li.darkMode{
     background-color: #ffffff;
     border: 1px solid darkred;
     color: darkred;
@@ -67,17 +67,40 @@ button {
     cursor: pointer;
 }
 
-.my-card ul li:hover {
+.my-card ul li.blueMode {
+    background-color: #ffffff;
+    border: 1px solid #f0ad4e;
+    color: #f0ad4e;
+    border-radius: 5px;
+    padding: 20px;
+    /*min-width: 180px;*/
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.my-card ul li.darkMode:hover {
     background-color: darkred;
     border: 1px solid #ffffff;
     color: #ffffff;
 }
+.my-card ul li.blueMode:hover {
+    background-color: #f0ad4e;
+    border: 1px solid #ffffff;
+    color: #025aa5;
+}
 
-.my-card ul li.active {
+.my-card ul li.darkMode.active {
     background-color: darkred;
     border: 1px solid #1d1e1f;
     color: #ffffff;
 }
+
+.my-card ul li.blueMode.active {
+    background-color: #f0ad4e;
+    border: 1px solid #1d1e1f;
+    color: #025aa5;
+}
+
 
 li.list-group-item  {
     font-size: 22px;

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
-const List = ({data, handleCheck, handleDelete, activeDay}:
-                  { data: any, handleCheck: Function, handleDelete: Function, activeDay: string}) => {
+const List = ({data, handleCheck, handleDelete, activeDay,colorMode}:
+                  { data: any, handleCheck: Function, handleDelete: Function, activeDay: string,colorMode:string}) => {
     const [] = useState<number>(0);
-    let classList: string = 'list-group-item mb-1 ';
+    let classList: string = `list-group-item mb-1 `;
 
     const showVisibile = function (): JSX.Element | null {
         let elementWeek:number;
