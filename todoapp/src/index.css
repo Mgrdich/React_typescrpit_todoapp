@@ -11,7 +11,7 @@ body div.blueMode {
     background-color: #025aa5 !important;
 
 }
-body div.darkMood {
+body div.darkMode {
     background-color: #1d1e1f !important;
 }
 
@@ -126,4 +126,8 @@ i.fa-times.darkMode {
 
 h1.blueMode {
     color:#f0ad4e !important;
+}
+
+h1.text-danger {
+    display: inline-block;
 }

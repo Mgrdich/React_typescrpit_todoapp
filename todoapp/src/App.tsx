@@ -45,7 +45,7 @@ function App(): JSX.Element {
     }
 
 
-    const ColorMode = (blueMode ? "blueMode" : "darkMood");
+    const ColorMode = (blueMode ? "blueMode" : "darkMode");
     const btnMode = (ColorMode === "blueMode" ? "btn-warning" : "btn-danger");
 
     const handleSubmit = function (e: FormElem): void {
