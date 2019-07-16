@@ -86,7 +86,10 @@ function App(): JSX.Element {
     return (
         <div className={`main ${ColorMode}`}>
             <div className="container">
-                <h1 className="text-danger">Todo List</h1>
+                <div>
+                    <h1 className={`text-danger ${ColorMode}`}>Todo List</h1>
+                    <button onClick={()=>setblueMode(!blueMode)} className={`btn ${btnMode} mt-2 pull-right`}>Color</button>
+                </div>
                 <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick} colorMode={ColorMode}/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>

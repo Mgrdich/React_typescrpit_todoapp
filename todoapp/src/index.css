@@ -109,4 +109,21 @@ li.list-group-item  {
 .list-group-item i {
     cursor: pointer;
 }
+i.blueMode {
+    color:#f0ad4e;
+}
 
+i.fa-times.blueMode {
+    color:#025aa5;
+}
+
+i.darkMode {
+    color:darkred;
+}
+i.fa-times.darkMode {
+    color:unset;
+}
+
+h1.blueMode {
+    color:#f0ad4e !important;
+}

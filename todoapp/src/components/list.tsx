@@ -18,8 +18,8 @@ const List = ({data, handleCheck, handleDelete, activeDay,colorMode}:
                     >{ele.text}{(ele.complete) ?
                         null :
                         <>
-                            <i className="fa fa-check withinListRight" onClick={() => handleCheck(index)}/>
-                            <i className="fa fa-times withinListRight1" onClick={() => handleDelete(index)}/>
+                            <i className={`fa fa-check withinListRight ${colorMode}`} onClick={() => handleCheck(index)}/>
+                            <i className={`fa fa-times withinListRight1 ${colorMode}`} onClick={() => handleDelete(index)}/>
                         </>}</li>
                 )
             } else return null;
