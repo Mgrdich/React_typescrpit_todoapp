@@ -55,6 +55,21 @@ function App(): JSX.Element {
 
     };
     const addTodo = function (text: string): void { /*here will be added the all code*/
+        if (weekDay === 'All') {
+            let filtered = Weekdays.reduce((acc, item, index) => {
+                let obj = {
+                    text: text,
+                    complete: false,
+                    week: item
+                };
+                if (index) {
+                    return [...acc, obj];
+                } else return [obj];
+            }, [{}]);
+            console.log(filtered);
+            const newTodos: ITodo[] = [...todos];
+            setTodos(newTodos);
+        }
         const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
         setTodos(newTodos);
     };
@@ -75,7 +90,10 @@ function App(): JSX.Element {
         setTodos(Filtered);
     };
     const deleteAll = function (activeWeek: string): void { /*here for all*/
-
+        if (activeWeek === 'All') {
+            setTodos([]);
+            return;
+        }
         let Filtered = todos.filter((item) => {
             return item.week !== activeWeek;
         });
@@ -91,9 +109,9 @@ function App(): JSX.Element {
                     <h1 className={`text-danger ${ColorMode}`}>Todo List</h1>
                     <label className={`switch ${ColorMode} mt-2 pull-right`}>
                         <input type="checkbox" checked={blueMode}
-                               onChange={()=>setblueMode(!blueMode)}
+                               onChange={() => setblueMode(!blueMode)}
                         />
-                            <span className="slider round"></span>
+                        <span className="slider round"></span>
                     </label>
 
                 </div>
@@ -107,7 +125,8 @@ function App(): JSX.Element {
                 </div>
 
                 <section className="mt-20 ">
-                    <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo} colorMode={ColorMode}/>
+                    <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}
+                          colorMode={ColorMode}/>
                     {(CountingProperty(todos, weekDay, "week")) ?
                         <button
                             className={`btn ${btnMode} mt-2 pull-right`}

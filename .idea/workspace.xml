@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec45a39-a302-48f6-a12a-efab92b6bc89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/helper/Counting.ts" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/helper/Counting.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/styles/switch.css" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/styles/switch.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,23 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="110" column="53" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="627">
+              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoapp/src/helper/Counting.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="114">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -71,6 +65,7 @@
       <find>blueMood</find>
       <find>weekDay</find>
       <find>CountingProperty</find>
+      <find>ITodo</find>
     </findStrings>
     <replaceStrings>
       <replace>blueMode</replace>
@@ -96,8 +91,8 @@
         <option value="$PROJECT_DIR$/todoapp/src/index.css" />
         <option value="$PROJECT_DIR$/todoapp/src/index.js" />
         <option value="$PROJECT_DIR$/todoapp/src/styles/switch.css" />
-        <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
         <option value="$PROJECT_DIR$/todoapp/src/helper/Counting.ts" />
+        <option value="$PROJECT_DIR$/todoapp/src/App.tsx" />
       </list>
     </option>
   </component>
@@ -210,12 +205,12 @@
       <workItem from="1563258546010" duration="2481000" />
       <workItem from="1563387477742" duration="955000" />
       <workItem from="1563388512986" duration="652000" />
-      <workItem from="1563389450489" duration="421000" />
+      <workItem from="1563389450489" duration="2187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50949000" />
+    <option name="totallyTimeSpent" value="52715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1052" extended-state="6" />
@@ -453,20 +448,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
+    <entry file="file://$PROJECT_DIR$/todoapp/src/helper/Counting.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="110" column="53" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoapp/src/helper/Counting.ts">
+    <entry file="file://$PROJECT_DIR$/todoapp/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="627">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
         </state>
       </provider>
     </entry>
