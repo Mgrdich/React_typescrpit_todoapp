@@ -54,7 +54,7 @@ function App(): JSX.Element {
         setValue("");//to get it reinitialize itself
 
     };
-    const addTodo = function (text: string): void {
+    const addTodo = function (text: string): void { /*here will be added the all code*/
         const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
         setTodos(newTodos);
     };
@@ -74,7 +74,8 @@ function App(): JSX.Element {
         });
         setTodos(Filtered);
     };
-    const deleteAll = function (activeWeek: string): void {
+    const deleteAll = function (activeWeek: string): void { /*here for all*/
+
         let Filtered = todos.filter((item) => {
             return item.week !== activeWeek;
         });
