@@ -131,3 +131,19 @@ h1.blueMode {
 h1.text-danger {
     display: inline-block;
 }
+
+
+.labelIcons label {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.labelIcons i {
+    font-size: 22px;
+}
+.labelIcons.blueMode i {
+    color:#f0ad4e
+}
+.labelIcons.darkMode i {
+    color:darkred;
+}

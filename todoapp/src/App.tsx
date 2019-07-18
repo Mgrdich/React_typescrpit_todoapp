@@ -107,7 +107,7 @@ function App(): JSX.Element {
             <div className="container">
                 <div>
                     <h1 className={`text-danger ${ColorMode}`}>Todo List</h1>
-                    <div className="pull-right">
+                    <div className={`pull-right labelIcons ${ColorMode}`}>
                         <i className="fa fa-sun"/>
                         <label className={`switch ${ColorMode} mt-2`}>
                             <input type="checkbox" checked={blueMode}
