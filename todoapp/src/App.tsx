@@ -107,12 +107,16 @@ function App(): JSX.Element {
             <div className="container">
                 <div>
                     <h1 className={`text-danger ${ColorMode}`}>Todo List</h1>
-                    <label className={`switch ${ColorMode} mt-2 pull-right`}>
-                        <input type="checkbox" checked={blueMode}
-                               onChange={() => setblueMode(!blueMode)}
-                        />
-                        <span className="slider round"></span>
-                    </label>
+                    <div className="pull-right">
+                        <i className="fa fa-sun"/>
+                        <label className={`switch ${ColorMode} mt-2`}>
+                            <input type="checkbox" checked={blueMode}
+                                   onChange={() => setblueMode(!blueMode)}
+                            />
+                            <span className="slider round"></span>
+                        </label>
+                        <i className="fas fa-moon"/>
+                    </div>
 
                 </div>
                 <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick} colorMode={ColorMode}/>
