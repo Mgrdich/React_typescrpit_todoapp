@@ -55,23 +55,39 @@ function App(): JSX.Element {
 
     };
     const addTodo = function (text: string): void { /*here will be added the all code*/
+        let IT: ITodo[];
         if (weekDay === 'All') {
-            let filtered = Weekdays.reduce((acc, item, index) => {
-                let obj = {
-                    text: text,
-                    complete: false,
-                    week: item
-                };
-                if (index) {
-                    return [...acc, obj];
-                } else return [obj];
-            }, [{}]);
-            console.log(filtered);
-            const newTodos: ITodo[] = [...todos];
+            /*
+                        let filtered = Weekdays.reduce((acc, item, index) => {
+                            let obj = {
+                                text: text,
+                                complete: false,
+                                week: item
+                            };
+                            if (index) {
+                                return [...acc, obj];
+                            } else return [obj];
+                        }, [{}]);
+
+            */
+            let newTodos: ITodo[] = [...todos];
+            console.log(Weekdays);
+            Weekdays.forEach((item, index) => {
+                if (item !== 'All') {
+                    let obj: ITodo = {
+                        text: text,
+                        complete: false,
+                        week: item
+                    };
+                    newTodos = [...newTodos ,obj];
+                }
+            });
+            console.log(newTodos);
+            setTodos(newTodos);
+        } else {
+            const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
             setTodos(newTodos);
         }
-        const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
-        setTodos(newTodos);
     };
 
     const completeTodo = function (index: number): void {
