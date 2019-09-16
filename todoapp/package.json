@@ -7,14 +7,20 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "bootstrap-css": "^4.0.0-alpha.5",
+    "@types/node-sass": "^4.11.0",
     "font-awesome": "^4.7.0",
+    "npm-run-all": "^4.1.5",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typescript": "^3.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "build:css": "node-sass src/Style/style.scss -o ",
+    "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
+    "start": "npm-run-all -p watch:css start:js",
+    "start:js": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
