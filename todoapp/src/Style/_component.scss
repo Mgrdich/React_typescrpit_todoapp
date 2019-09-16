@@ -4,6 +4,7 @@
   display: inline-block;
   width: 36px;
   height: 23px;
+
   input {
     opacity: 0;
     width: 0;
@@ -18,9 +19,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:darkred;
+  background-color: darkred;
   -webkit-transition: .4s;
   transition: .4s;
+
   &:before {
     position: absolute;
     content: "";
@@ -32,8 +34,10 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
+
   &.round {
-   border-radius: 34px;
+    border-radius: 34px;
+
     &:before {
       border-radius: 50%;
     }
@@ -42,8 +46,9 @@
 
 input {
   &:checked {
-    &+.slider {
+    & + .slider {
       background-color: #f0ad4e;
+
       &:before {
         -webkit-transform: translateX(14px);
         -ms-transform: translateX(14px);
@@ -51,7 +56,67 @@ input {
       }
     }
   }
+
   &:focus {
     box-shadow: 0 0 1px #f0ad4e;
+  }
+}
+
+button {
+  font-family: 'Indie Flower', cursive !important;
+  min-width: 98.9931px;
+}
+
+
+/*Card component*/
+
+.my-card {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+
+  ul li {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    /*min-width: 180px;*/
+    font-size: 26px;
+    cursor: pointer;
+    border: 1px solid;
+  }
+}
+
+.darkMode {
+  .my-card ul li{
+    border-color: darkred;
+    color: darkred;
+    &:hover,.active {
+      background-color: darkred;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+    .active {
+      background-color: darkred;
+      border: 1px solid #1d1e1f;
+      color: #ffffff;
+    }
+  }
+}
+
+.blueMode {
+  .my-card ul li{
+    border-color: #f0ad4e;
+    color: #f0ad4e;
+  }
+  &:hover,.active {
+    background-color: #f0ad4e;
+    border: 1px solid #ffffff;
+    color: #025aa5;
+  }
+  .active {
+    background-color: #f0ad4e;
+    border: 1px solid #1d1e1f;
+    color: #025aa5;
   }
 }

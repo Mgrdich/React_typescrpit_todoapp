@@ -1,0 +1,25 @@
+.pull{
+  &-right {
+    float: right;
+  }
+  &-left {
+    float: left;
+  }
+}
+
+.line-over, .line-over:hover {
+  text-decoration: line-through;
+}
+
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.withinListRight {
+  right: 50px;
+  position: absolute;
+  &1 {
+    right: 20px;
+  }
+}

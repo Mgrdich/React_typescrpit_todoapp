@@ -1,0 +1,69 @@
+body {
+  font-family: 'Indie Flower', cursive !important;
+  height: 100%;
+
+  .main {
+    height: 100vh;
+
+    &.blueMode {
+      div {
+        background-color: #025aa5 !important;
+      }
+
+      i {
+        color: #f0ad4e;
+
+        &.fa-times {
+          color: #025aa5;
+        }
+      }
+
+      h1 {
+        color: #f0ad4e !important;
+
+        &.text-danger {
+          display: inline-block;
+        }
+      }
+
+      .labelIcons i {
+        color: #f0ad4e;
+      }
+    }
+
+    &.darkMode {
+      div {
+        background-color: #1d1e1f !important;
+      }
+
+      i {
+        color: darkred;
+        &.fa-times {
+          color: #1d1e1f;
+        }
+      }
+      }
+
+
+
+    li {
+      .list-group-item {
+        font-size: 22px;
+
+        i {
+          cursor: pointer;
+          color:#1d1e1f
+        }
+      }
+    }
+  }
+}
+.labelIcons {
+  label {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  i {
+    font-size: 22px;
+  }
+}

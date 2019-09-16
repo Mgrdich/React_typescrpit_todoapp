@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+body {
+  font-family: 'Indie Flower', cursive !important;
+  height: 100%; }
+  body .main {
+    height: 100vh; }
+    body .main.blueMode div {
+      background-color: #025aa5 !important; }
+    body .main.blueMode i {
+      color: #f0ad4e; }
+      body .main.blueMode i.fa-times {
+        color: #025aa5; }
+    body .main.blueMode h1 {
+      color: #f0ad4e !important; }
+      body .main.blueMode h1.text-danger {
+        display: inline-block; }
+    body .main.blueMode .labelIcons i {
+      color: #f0ad4e; }
+    body .main.darkMode div {
+      background-color: #1d1e1f !important; }
+    body .main.darkMode i {
+      color: darkred; }
+      body .main.darkMode i.fa-times {
+        color: #1d1e1f; }
+    body .main li .list-group-item {
+      font-size: 22px; }
+      body .main li .list-group-item i {
+        cursor: pointer;
+        color: #1d1e1f; }
+
+.labelIcons label {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.labelIcons i {
+  font-size: 22px; }
+
 /*switch component*/
 .switch {
   position: relative;
@@ -44,3 +80,48 @@ input:checked + .slider {
 
 input:focus {
   box-shadow: 0 0 1px #f0ad4e; }
+
+button {
+  font-family: 'Indie Flower', cursive !important;
+  min-width: 98.9931px; }
+
+/*Card component*/
+.my-card {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap; }
+  .my-card ul li {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    /*min-width: 180px;*/
+    font-size: 26px;
+    cursor: pointer;
+    border: 1px solid; }
+
+.darkMode .my-card ul li {
+  border-color: darkred;
+  color: darkred; }
+  .darkMode .my-card ul li:hover, .darkMode .my-card ul li .active {
+    background-color: darkred;
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+  .darkMode .my-card ul li .active {
+    background-color: darkred;
+    border: 1px solid #1d1e1f;
+    color: #ffffff; }
+
+.blueMode .my-card ul li {
+  border-color: #f0ad4e;
+  color: #f0ad4e; }
+
+.blueMode:hover, .blueMode .active {
+  background-color: #f0ad4e;
+  border: 1px solid #ffffff;
+  color: #025aa5; }
+
+.blueMode .active {
+  background-color: #f0ad4e;
+  border: 1px solid #1d1e1f;
+  color: #025aa5; }
