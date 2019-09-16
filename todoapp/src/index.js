@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import './styles/switch.css'
+import "./Style/style.css"
 import "bootstrap-css/index";
 import App from './App';
 import * as serviceWorker from './serviceWorker';

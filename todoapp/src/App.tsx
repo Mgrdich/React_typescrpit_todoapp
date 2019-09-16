@@ -71,7 +71,7 @@ function App(): JSX.Element {
 
             */
             let newTodos: ITodo[] = [...todos];
-            console.log(Weekdays);
+
             Weekdays.forEach((item, index) => {
                 if (item !== 'All') {
                     let obj: ITodo = {
@@ -82,7 +82,7 @@ function App(): JSX.Element {
                     newTodos = [...newTodos ,obj];
                 }
             });
-            console.log(newTodos);
+
             setTodos(newTodos);
         } else {
             const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];

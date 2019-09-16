@@ -1,149 +1,121 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
-
 body {
-    font-family: 'Indie Flower', cursive !important;
-    height:100%
-}
-body .main {
-    height:100vh;
-}
-body div.blueMode {
-    background-color: #025aa5 !important;
+  font-family: 'Indie Flower', cursive !important;
+  height: 100%; }
 
-}
+body .main {
+  height: 100vh; }
+
+body div.blueMode {
+  background-color: #025aa5 !important; }
+
 body div.darkMode {
-    background-color: #1d1e1f !important;
-}
+  background-color: #1d1e1f !important; }
 
 button {
-    font-family: 'Indie Flower', cursive !important;;
-}
+  font-family: 'Indie Flower', cursive !important; }
 
 .pull-right {
-    float: right;
-}
+  float: right; }
 
 .pull-left {
-    float: left;
-}
+  float: left; }
 
 .line-over, .line-over:hover {
-    text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 .withinListRight {
-    right: 50px;
-    position: absolute;
-}
+  right: 50px;
+  position: absolute; }
 
 .withinListRight1 {
-    right: 20px;
-    position: absolute;
-}
+  right: 20px;
+  position: absolute; }
 
 button {
-    min-width: 98.9931px;
-}
+  min-width: 98.9931px; }
 
 .mt-20 {
-    margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .my-card ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    flex-wrap: wrap;
-}
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap; }
 
-.my-card ul li.darkMode{
-    background-color: #ffffff;
-    border: 1px solid darkred;
-    color: darkred;
-    border-radius: 5px;
-    padding: 20px;
-    /*min-width: 180px;*/
-    font-size: 26px;
-    cursor: pointer;
-}
+.my-card ul li.darkMode {
+  background-color: #ffffff;
+  border: 1px solid darkred;
+  color: darkred;
+  border-radius: 5px;
+  padding: 20px;
+  /*min-width: 180px;*/
+  font-size: 26px;
+  cursor: pointer; }
 
 .my-card ul li.blueMode {
-    background-color: #ffffff;
-    border: 1px solid #f0ad4e;
-    color: #f0ad4e;
-    border-radius: 5px;
-    padding: 20px;
-    /*min-width: 180px;*/
-    font-size: 26px;
-    cursor: pointer;
-}
+  background-color: #ffffff;
+  border: 1px solid #f0ad4e;
+  color: #f0ad4e;
+  border-radius: 5px;
+  padding: 20px;
+  /*min-width: 180px;*/
+  font-size: 26px;
+  cursor: pointer; }
 
 .my-card ul li.darkMode:hover {
-    background-color: darkred;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-}
+  background-color: darkred;
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
 .my-card ul li.blueMode:hover {
-    background-color: #f0ad4e;
-    border: 1px solid #ffffff;
-    color: #025aa5;
-}
+  background-color: #f0ad4e;
+  border: 1px solid #ffffff;
+  color: #025aa5; }
 
 .my-card ul li.darkMode.active {
-    background-color: darkred;
-    border: 1px solid #1d1e1f;
-    color: #ffffff;
-}
+  background-color: darkred;
+  border: 1px solid #1d1e1f;
+  color: #ffffff; }
 
 .my-card ul li.blueMode.active {
-    background-color: #f0ad4e;
-    border: 1px solid #1d1e1f;
-    color: #025aa5;
-}
+  background-color: #f0ad4e;
+  border: 1px solid #1d1e1f;
+  color: #025aa5; }
 
-
-li.list-group-item  {
-    font-size: 22px;
-}
+li.list-group-item {
+  font-size: 22px; }
 
 .list-group-item i {
-    cursor: pointer;
-}
+  cursor: pointer; }
+
 i.blueMode {
-    color:#f0ad4e;
-}
+  color: #f0ad4e; }
 
 i.fa-times.blueMode {
-    color:#025aa5;
-}
+  color: #025aa5; }
 
 i.darkMode {
-    color:darkred;
-}
+  color: darkred; }
+
 i.fa-times.darkMode {
-    color:unset;
-}
+  color: unset; }
 
 h1.blueMode {
-    color:#f0ad4e !important;
-}
+  color: #f0ad4e !important; }
 
 h1.text-danger {
-    display: inline-block;
-}
-
+  display: inline-block; }
 
 .labelIcons label {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .labelIcons i {
-    font-size: 22px;
-}
+  font-size: 22px; }
+
 .labelIcons.blueMode i {
-    color:#f0ad4e
-}
+  color: #f0ad4e; }
+
 .labelIcons.darkMode i {
-    color:darkred;
-}
+  color: darkred; }
