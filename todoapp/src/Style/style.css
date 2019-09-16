@@ -1,32 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.line-over, .line-over:hover {
+  text-decoration: line-through; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.withinListRight {
+  right: 50px;
+  position: absolute; }
+
+.withinListRight1 {
+  right: 20px; }
+
 body {
   font-family: 'Indie Flower', cursive !important;
   height: 100%; }
-  body .main {
-    height: 100vh; }
-    body .main.blueMode div {
-      background-color: #025aa5 !important; }
-    body .main.blueMode i {
-      color: #f0ad4e; }
-      body .main.blueMode i.fa-times {
-        color: #025aa5; }
-    body .main.blueMode h1 {
-      color: #f0ad4e !important; }
-      body .main.blueMode h1.text-danger {
-        display: inline-block; }
-    body .main.blueMode .labelIcons i {
-      color: #f0ad4e; }
-    body .main.darkMode div {
-      background-color: #1d1e1f !important; }
-    body .main.darkMode i {
-      color: darkred; }
-      body .main.darkMode i.fa-times {
-        color: #1d1e1f; }
-    body .main li .list-group-item {
-      font-size: 22px; }
-      body .main li .list-group-item i {
-        cursor: pointer;
-        color: #1d1e1f; }
+
+body .main {
+  height: 100vh; }
+
+body .main.blueMode {
+  background-color: #025aa5 !important; }
+
+body .main.blueMode i {
+  color: #f0ad4e; }
+
+body .main.blueMode i.fa-times {
+  color: #025aa5; }
+
+body .main.blueMode h1 {
+  color: #f0ad4e !important; }
+
+body .main.blueMode h1.text-danger {
+  display: inline-block; }
+
+body .main.blueMode .labelIcons i {
+  color: #f0ad4e; }
+
+body .main.darkMode {
+  background-color: #1d1e1f !important; }
+
+body .main.darkMode i {
+  color: darkred; }
+
+body .main.darkMode i.fa-times {
+  color: unset; }
+
+body .main li.list-group-item {
+  font-size: 22px; }
+
+body .main li.list-group-item i {
+  cursor: pointer;
+  color: #1d1e1f; }
 
 .labelIcons label {
   margin-left: 10px;
@@ -41,10 +72,11 @@ body {
   display: inline-block;
   width: 36px;
   height: 23px; }
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0; }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
 
 .slider {
   position: absolute;
@@ -56,27 +88,31 @@ body {
   background-color: darkred;
   -webkit-transition: .4s;
   transition: .4s; }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s; }
-  .slider.round {
-    border-radius: 34px; }
-    .slider.round:before {
-      border-radius: 50%; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
 
 input:checked + .slider {
   background-color: #f0ad4e; }
-  input:checked + .slider:before {
-    -webkit-transform: translateX(14px);
-    -ms-transform: translateX(14px);
-    transform: translateX(14px); }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px); }
 
 input:focus {
   box-shadow: 0 0 1px #f0ad4e; }
@@ -86,42 +122,45 @@ button {
   min-width: 98.9931px; }
 
 /*Card component*/
-.my-card {
+.my-card ul {
   display: flex;
   list-style: none;
   padding-left: 0;
   flex-wrap: wrap; }
-  .my-card ul li {
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 20px;
-    /*min-width: 180px;*/
-    font-size: 26px;
-    cursor: pointer;
-    border: 1px solid; }
+
+.my-card ul li {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  /*min-width: 180px;*/
+  font-size: 26px;
+  cursor: pointer;
+  border: 1px solid; }
 
 .darkMode .my-card ul li {
   border-color: darkred;
   color: darkred; }
-  .darkMode .my-card ul li:hover, .darkMode .my-card ul li .active {
-    background-color: darkred;
-    border: 1px solid #ffffff;
-    color: #ffffff; }
-  .darkMode .my-card ul li .active {
-    background-color: darkred;
-    border: 1px solid #1d1e1f;
-    color: #ffffff; }
+
+.darkMode .my-card ul li:hover, .darkMode .my-card ul li .active {
+  background-color: darkred;
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
+.darkMode .my-card ul li .active {
+  background-color: darkred;
+  border: 1px solid #1d1e1f;
+  color: #ffffff; }
 
 .blueMode .my-card ul li {
   border-color: #f0ad4e;
   color: #f0ad4e; }
 
-.blueMode:hover, .blueMode .active {
+.blueMode .my-card ul li:hover, .blueMode .my-card ul li .active {
   background-color: #f0ad4e;
   border: 1px solid #ffffff;
   color: #025aa5; }
 
-.blueMode .active {
+.blueMode .my-card ul li .active {
   background-color: #f0ad4e;
   border: 1px solid #1d1e1f;
   color: #025aa5; }

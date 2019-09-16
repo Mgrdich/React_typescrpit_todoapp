@@ -71,31 +71,35 @@ button {
 /*Card component*/
 
 .my-card {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  flex-wrap: wrap;
+  ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
 
-  ul li {
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 20px;
-    /*min-width: 180px;*/
-    font-size: 26px;
-    cursor: pointer;
-    border: 1px solid;
+    li {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+      /*min-width: 180px;*/
+      font-size: 26px;
+      cursor: pointer;
+      border: 1px solid;
+    }
   }
 }
 
 .darkMode {
-  .my-card ul li{
+  .my-card ul li {
     border-color: darkred;
     color: darkred;
-    &:hover,.active {
+
+    &:hover, .active {
       background-color: darkred;
       border: 1px solid #ffffff;
       color: #ffffff;
     }
+
     .active {
       background-color: darkred;
       border: 1px solid #1d1e1f;
@@ -105,18 +109,20 @@ button {
 }
 
 .blueMode {
-  .my-card ul li{
+  .my-card ul li {
     border-color: #f0ad4e;
     color: #f0ad4e;
-  }
-  &:hover,.active {
-    background-color: #f0ad4e;
-    border: 1px solid #ffffff;
-    color: #025aa5;
-  }
-  .active {
-    background-color: #f0ad4e;
-    border: 1px solid #1d1e1f;
-    color: #025aa5;
+
+    &:hover, .active {
+      background-color: #f0ad4e;
+      border: 1px solid #ffffff;
+      color: #025aa5;
+    }
+
+    .active {
+      background-color: #f0ad4e;
+      border: 1px solid #1d1e1f;
+      color: #025aa5;
+    }
   }
 }

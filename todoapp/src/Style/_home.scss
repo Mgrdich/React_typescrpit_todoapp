@@ -6,10 +6,7 @@ body {
     height: 100vh;
 
     &.blueMode {
-      div {
         background-color: #025aa5 !important;
-      }
-
       i {
         color: #f0ad4e;
 
@@ -32,37 +29,36 @@ body {
     }
 
     &.darkMode {
-      div {
         background-color: #1d1e1f !important;
-      }
 
       i {
         color: darkred;
         &.fa-times {
-          color: #1d1e1f;
+          color:unset;
         }
       }
-      }
-
+    }
 
 
     li {
-      .list-group-item {
+      &.list-group-item {
         font-size: 22px;
 
         i {
           cursor: pointer;
-          color:#1d1e1f
+          color: #1d1e1f
         }
       }
     }
   }
 }
+
 .labelIcons {
   label {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   i {
     font-size: 22px;
   }
