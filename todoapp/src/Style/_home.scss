@@ -5,11 +5,18 @@ body {
   .main {
     height: 100vh;
 
+    h1 {
+      &.text-danger {
+        display: inline-block;
+      }
+    }
     &.blueMode {
         background-color: #025aa5 !important;
       i {
         color: #f0ad4e;
-
+        &.fa-check {
+         color: #f0ad4e;
+        }
         &.fa-times {
           color: #025aa5;
         }
@@ -17,10 +24,6 @@ body {
 
       h1 {
         color: #f0ad4e !important;
-
-        &.text-danger {
-          display: inline-block;
-        }
       }
 
       .labelIcons i {
@@ -33,6 +36,9 @@ body {
 
       i {
         color: darkred;
+        &.fa-check {
+          color: darkred;
+        }
         &.fa-times {
           color:unset;
         }

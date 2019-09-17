@@ -19,7 +19,8 @@
 .withinListRight {
   right: 50px;
   position: absolute;
-  &1 {
+  &-1 {
     right: 20px;
+    position: absolute;
   }
 }

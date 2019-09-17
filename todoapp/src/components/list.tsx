@@ -19,7 +19,7 @@ const List = ({data, handleCheck, handleDelete, activeDay,colorMode}:
                         null :
                         <>
                             <i className={`fa fa-check withinListRight ${colorMode}`} onClick={() => handleCheck(index)}/>
-                            <i className={`fa fa-times withinListRight1 ${colorMode}`} onClick={() => handleDelete(index)}/>
+                            <i className={`fa fa-times withinListRight-1 ${colorMode}`} onClick={() => handleDelete(index)}/>
                         </>}</li>
                 )
             } else return null;

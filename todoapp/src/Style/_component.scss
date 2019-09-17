@@ -65,6 +65,11 @@ input {
 button {
   font-family: 'Indie Flower', cursive !important;
   min-width: 98.9931px;
+  cursor: pointer;
+  &.btn {
+  font-size: 18px;
+  font-weight: 600;
+  }
 }
 
 
@@ -94,13 +99,13 @@ button {
     border-color: darkred;
     color: darkred;
 
-    &:hover, .active {
+    &:hover, &.active {
       background-color: darkred;
       border: 1px solid #ffffff;
       color: #ffffff;
     }
 
-    .active {
+    &.active {
       background-color: darkred;
       border: 1px solid #1d1e1f;
       color: #ffffff;
@@ -113,13 +118,13 @@ button {
     border-color: #f0ad4e;
     color: #f0ad4e;
 
-    &:hover, .active {
+    &:hover, &.active {
       background-color: #f0ad4e;
       border: 1px solid #ffffff;
       color: #025aa5;
     }
 
-    .active {
+    &.active {
       background-color: #f0ad4e;
       border: 1px solid #1d1e1f;
       color: #025aa5;

@@ -15,8 +15,9 @@
   right: 50px;
   position: absolute; }
 
-.withinListRight1 {
-  right: 20px; }
+.withinListRight-1 {
+  right: 20px;
+  position: absolute; }
 
 body {
   font-family: 'Indie Flower', cursive !important;
@@ -25,10 +26,16 @@ body {
 body .main {
   height: 100vh; }
 
+body .main h1.text-danger {
+  display: inline-block; }
+
 body .main.blueMode {
   background-color: #025aa5 !important; }
 
 body .main.blueMode i {
+  color: #f0ad4e; }
+
+body .main.blueMode i.fa-check {
   color: #f0ad4e; }
 
 body .main.blueMode i.fa-times {
@@ -37,9 +44,6 @@ body .main.blueMode i.fa-times {
 body .main.blueMode h1 {
   color: #f0ad4e !important; }
 
-body .main.blueMode h1.text-danger {
-  display: inline-block; }
-
 body .main.blueMode .labelIcons i {
   color: #f0ad4e; }
 
@@ -47,6 +51,9 @@ body .main.darkMode {
   background-color: #1d1e1f !important; }
 
 body .main.darkMode i {
+  color: darkred; }
+
+body .main.darkMode i.fa-check {
   color: darkred; }
 
 body .main.darkMode i.fa-times {
@@ -119,7 +126,12 @@ input:focus {
 
 button {
   font-family: 'Indie Flower', cursive !important;
-  min-width: 98.9931px; }
+  min-width: 98.9931px;
+  cursor: pointer; }
+
+button.btn {
+  font-size: 18px;
+  font-weight: 600; }
 
 /*Card component*/
 .my-card ul {
@@ -141,12 +153,12 @@ button {
   border-color: darkred;
   color: darkred; }
 
-.darkMode .my-card ul li:hover, .darkMode .my-card ul li .active {
+.darkMode .my-card ul li:hover, .darkMode .my-card ul li.active {
   background-color: darkred;
   border: 1px solid #ffffff;
   color: #ffffff; }
 
-.darkMode .my-card ul li .active {
+.darkMode .my-card ul li.active {
   background-color: darkred;
   border: 1px solid #1d1e1f;
   color: #ffffff; }
@@ -155,12 +167,12 @@ button {
   border-color: #f0ad4e;
   color: #f0ad4e; }
 
-.blueMode .my-card ul li:hover, .blueMode .my-card ul li .active {
+.blueMode .my-card ul li:hover, .blueMode .my-card ul li.active {
   background-color: #f0ad4e;
   border: 1px solid #ffffff;
   color: #025aa5; }
 
-.blueMode .my-card ul li .active {
+.blueMode .my-card ul li.active {
   background-color: #f0ad4e;
   border: 1px solid #1d1e1f;
   color: #025aa5; }
