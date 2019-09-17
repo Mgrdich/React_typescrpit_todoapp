@@ -122,10 +122,10 @@ function App(): JSX.Element {
         <div className={`main ${ColorMode}`}>
             <div className="container">
                 <div>
-                    <h1 className={`text-danger ${ColorMode}`}>Todo List</h1>
-                    <div className={`pull-right labelIcons ${ColorMode}`}>
+                    <h1 className="text-danger">Todo List</h1>
+                    <div className="pull-right labelIcons">
                         <i className="fa fa-sun"/>
-                        <label className={`switch ${ColorMode} mt-2`}>
+                        <label className="switch mt-2">
                             <input type="checkbox" checked={blueMode}
                                    onChange={() => setblueMode(!blueMode)}
                             />
@@ -135,7 +135,7 @@ function App(): JSX.Element {
                     </div>
 
                 </div>
-                <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick} colorMode={ColorMode}/>
+                <Filter data={Weekdays} activeDay={weekDay} handleClick={handleClick}/>
                 <div className="clearfix">
                     <form onSubmit={handleSubmit}>
                         <input type="text" required className="form-control" value={value}
@@ -146,7 +146,7 @@ function App(): JSX.Element {
 
                 <section className="mt-20 ">
                     <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}
-                          colorMode={ColorMode}/>
+                          />
                     {(CountingProperty(todos, weekDay, "week")) ?
                         <button
                             className={`btn ${btnMode} mt-2 pull-right`}

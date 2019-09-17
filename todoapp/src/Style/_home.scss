@@ -11,33 +11,33 @@ body {
       }
     }
     &.blueMode {
-        background-color: #025aa5 !important;
+        background-color: $blueMode1 !important;
       i {
-        color: #f0ad4e;
+        color: $blueMode2;
         &.fa-check {
-         color: #f0ad4e;
+         color: $blueMode2;
         }
         &.fa-times {
-          color: #025aa5;
+          color: $blueMode1;
         }
       }
 
       h1 {
-        color: #f0ad4e !important;
+        color: $blueMode2 !important;
       }
 
       .labelIcons i {
-        color: #f0ad4e;
+        color: $blueMode2;
       }
     }
 
     &.darkMode {
-        background-color: #1d1e1f !important;
+        background-color: $darkMode2 !important;
 
       i {
-        color: darkred;
+        color: $darkMode1;
         &.fa-check {
-          color: darkred;
+          color: $darkMode1;
         }
         &.fa-times {
           color:unset;
@@ -52,7 +52,7 @@ body {
 
         i {
           cursor: pointer;
-          color: #1d1e1f
+          color: $darkMode2;
         }
       }
     }

@@ -51,10 +51,10 @@ body .main.darkMode {
   background-color: #1d1e1f !important; }
 
 body .main.darkMode i {
-  color: darkred; }
+  color: #8b0000; }
 
 body .main.darkMode i.fa-check {
-  color: darkred; }
+  color: #8b0000; }
 
 body .main.darkMode i.fa-times {
   color: unset; }
@@ -92,7 +92,7 @@ body .main li.list-group-item i {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: darkred;
+  background-color: #8b0000;
   -webkit-transition: .4s;
   transition: .4s; }
 
@@ -147,20 +147,20 @@ button.btn {
   /*min-width: 180px;*/
   font-size: 26px;
   cursor: pointer;
-  border: 1px solid; }
+  border: 2px solid; }
 
 .darkMode .my-card ul li {
-  border-color: darkred;
-  color: darkred; }
+  border-color: #8b0000;
+  color: #8b0000; }
 
 .darkMode .my-card ul li:hover, .darkMode .my-card ul li.active {
-  background-color: darkred;
-  border: 1px solid #ffffff;
+  background-color: #8b0000;
+  border: 2px solid #ffffff;
   color: #ffffff; }
 
 .darkMode .my-card ul li.active {
-  background-color: darkred;
-  border: 1px solid #1d1e1f;
+  background-color: #8b0000;
+  border: 2px solid #1d1e1f;
   color: #ffffff; }
 
 .blueMode .my-card ul li {
@@ -169,10 +169,10 @@ button.btn {
 
 .blueMode .my-card ul li:hover, .blueMode .my-card ul li.active {
   background-color: #f0ad4e;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   color: #025aa5; }
 
 .blueMode .my-card ul li.active {
   background-color: #f0ad4e;
-  border: 1px solid #1d1e1f;
+  border: 2px solid #1d1e1f;
   color: #025aa5; }

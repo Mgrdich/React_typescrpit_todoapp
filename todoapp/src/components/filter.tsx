@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Filter = ({data, activeDay,handleClick,colorMode}: { data: string[], activeDay: string,handleClick:Function,colorMode:string }): JSX.Element => {
+const Filter = ({data, activeDay,handleClick}: { data: string[], activeDay: string,handleClick:Function }): JSX.Element => {
     return (
         <div className="my-card">
             <ul>
@@ -8,7 +8,7 @@ const Filter = ({data, activeDay,handleClick,colorMode}: { data: string[], activ
                     data.map((item,index) => {
                         return (
                             <li
-                                className={item === activeDay ? `${colorMode} active` : `${colorMode}`}
+                                className={item === activeDay ? "active" : ``}
                                 onClick={()=>handleClick(item)}
                                 key={index}
                             >{item}</li>

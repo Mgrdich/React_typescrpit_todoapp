@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: darkred;
+  background-color: $darkMode1;
   -webkit-transition: .4s;
   transition: .4s;
 
@@ -47,7 +47,7 @@
 input {
   &:checked {
     & + .slider {
-      background-color: #f0ad4e;
+      background-color: $blueMode2;
 
       &:before {
         -webkit-transform: translateX(14px);
@@ -58,7 +58,7 @@ input {
   }
 
   &:focus {
-    box-shadow: 0 0 1px #f0ad4e;
+    box-shadow: 0 0 1px $blueMode2;
   }
 }
 
@@ -89,25 +89,25 @@ button {
       /*min-width: 180px;*/
       font-size: 26px;
       cursor: pointer;
-      border: 1px solid;
+      border: 2px solid;
     }
   }
 }
 
 .darkMode {
   .my-card ul li {
-    border-color: darkred;
-    color: darkred;
+    border-color: $darkMode1;
+    color: $darkMode1;
 
     &:hover, &.active {
-      background-color: darkred;
-      border: 1px solid #ffffff;
+      background-color: $darkMode1;
+      border: 2px solid #ffffff;
       color: #ffffff;
     }
 
     &.active {
-      background-color: darkred;
-      border: 1px solid #1d1e1f;
+      background-color: $darkMode1;
+      border: 2px solid $darkMode2;
       color: #ffffff;
     }
   }
@@ -115,19 +115,19 @@ button {
 
 .blueMode {
   .my-card ul li {
-    border-color: #f0ad4e;
-    color: #f0ad4e;
+    border-color: $blueMode2;
+    color: $blueMode2;
 
     &:hover, &.active {
-      background-color: #f0ad4e;
-      border: 1px solid #ffffff;
-      color: #025aa5;
+      background-color: $blueMode2;
+      border: 2px solid #ffffff;
+      color: $blueMode1;
     }
 
     &.active {
-      background-color: #f0ad4e;
-      border: 1px solid #1d1e1f;
-      color: #025aa5;
+      background-color: $blueMode2;
+      border: 2px solid $darkMode2;
+      color: $blueMode1;
     }
   }
 }

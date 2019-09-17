@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-const List = ({data, handleCheck, handleDelete, activeDay,colorMode}:
-                  { data: any, handleCheck: Function, handleDelete: Function, activeDay: string,colorMode:string}) => {
+const List = ({data, handleCheck, handleDelete, activeDay}:
+                  { data: any, handleCheck: Function, handleDelete: Function, activeDay: string}) => {
     const [] = useState<number>(0);
     let classList: string = `list-group-item mb-1 `;
 
@@ -18,8 +18,8 @@ const List = ({data, handleCheck, handleDelete, activeDay,colorMode}:
                     >{ele.text}{(ele.complete) ?
                         null :
                         <>
-                            <i className={`fa fa-check withinListRight ${colorMode}`} onClick={() => handleCheck(index)}/>
-                            <i className={`fa fa-times withinListRight-1 ${colorMode}`} onClick={() => handleDelete(index)}/>
+                            <i className="fa fa-check withinListRight " onClick={() => handleCheck(index)}/>
+                            <i className="fa fa-times withinListRight-1" onClick={() => handleDelete(index)}/>
                         </>}</li>
                 )
             } else return null;
