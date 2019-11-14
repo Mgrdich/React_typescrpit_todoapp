@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Filter = ({data, activeDay,handleClick}: { data: string[], activeDay: string,handleClick:Function }): JSX.Element => {
+const Filter:React.FC<any> = ({data, activeDay,handleClick}: { data: string[], activeDay: string,handleClick:Function }): JSX.Element => {
     return (
         <div className="my-card">
             <ul>

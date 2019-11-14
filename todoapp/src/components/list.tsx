@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 
-const List = ({data, handleCheck, handleDelete, activeDay}:
+const List:React.FC<any> = ({data, handleCheck, handleDelete, activeDay}:
                   { data: any, handleCheck: Function, handleDelete: Function, activeDay: string}) => {
+
     const [] = useState<number>(0);
     let classList: string = `list-group-item mb-1 `;
 

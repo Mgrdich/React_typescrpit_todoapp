@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import List from "./components/list"
 import Filter from "./components/filter";
 import JSON1 from "./db.json";
@@ -50,11 +50,11 @@ function App(): JSX.Element {
 
     const handleSubmit = function (e: FormElem): void {
         e.preventDefault();
-        addTodo(value);
+        addTodo(value,todos);
         setValue("");//to get it reinitialize itself
 
     };
-    const addTodo = function (text: string): void { /*here will be added the all code*/
+    const addTodo = useCallback(function (text: string,todos:Array<ITodo>): void { /*here will be added the all code*/
         let IT: ITodo[];
         if (weekDay === 'All') {
             /*
@@ -88,14 +88,15 @@ function App(): JSX.Element {
             const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
             setTodos(newTodos);
         }
-    };
+    },[value,todos]);
 
     const completeTodo = function (index: number): void {
         const newTodos: ITodo[] = [...todos];
         newTodos[index].complete = !newTodos[index].complete;
         setTodos(newTodos);
     };
-    const deleteTodo = function (index: number, activeWeek: string): void {
+
+    const deleteTodo = function (index: number, activeWeek: string,todos:Array<ITodo>): void {
         let Filtered = todos.filter((item, ind) => {
             if (activeWeek !== 'All') {
                 return index !== ind;
@@ -105,6 +106,7 @@ function App(): JSX.Element {
         });
         setTodos(Filtered);
     };
+
     const deleteAll = function (activeWeek: string): void { /*here for all*/
         if (activeWeek === 'All') {
             setTodos([]);
