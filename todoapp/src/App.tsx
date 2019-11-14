@@ -12,6 +12,25 @@ export interface ITodo {
     week: string
 }
 
+function gerPrefColorScheme() {
+    if (!window.matchMedia) return;
+    return window.matchMedia("(prefers-color-scheme: dark)");
+}
+
+
+function getInitialMode(): boolean {
+    const isReturningUser = "blue" in localStorage;
+    const saveMode = localStorage.getItem("blue") == 'true';
+    const userPrefer = gerPrefColorScheme();
+    if (isReturningUser) {
+        return saveMode;
+    } else if (userPrefer) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 function App(): JSX.Element {
     const [value, setValue] = useState<string>("");
@@ -26,35 +45,16 @@ function App(): JSX.Element {
     }, [blueMode]);
 
 
-    function getInitialMode(): boolean {
-        const isReturningUser = "blue" in localStorage;
-        const saveMode = localStorage.getItem("blue") == 'true';
-        const userPrefer = gerPrefColorScheme();
-        if (isReturningUser) {
-            return saveMode;
-        } else if (userPrefer) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    function gerPrefColorScheme() {
-        if (!window.matchMedia) return;
-        return window.matchMedia("(prefers-color-scheme: dark)");
-    }
-
-
     const ColorMode = (blueMode ? "blueMode" : "darkMode");
     const btnMode = (ColorMode === "blueMode" ? "btn-warning" : "btn-danger");
 
     const handleSubmit = function (e: FormElem): void {
         e.preventDefault();
-        addTodo(value,todos);
+        addTodo(value, todos);
         setValue("");//to get it reinitialize itself
-
     };
-    const addTodo = useCallback(function (text: string,todos:Array<ITodo>): void { /*here will be added the all code*/
+
+    const addTodo = useCallback(function (text: string, todos: Array<ITodo>): void { /*here will be added the all code*/
         let IT: ITodo[];
         if (weekDay === 'All') {
             /*
@@ -79,7 +79,7 @@ function App(): JSX.Element {
                         complete: false,
                         week: item
                     };
-                    newTodos = [...newTodos ,obj];
+                    newTodos = [...newTodos, obj];
                 }
             });
 
@@ -88,15 +88,15 @@ function App(): JSX.Element {
             const newTodos: ITodo[] = [...todos, {text, complete: false, week: weekDay}];
             setTodos(newTodos);
         }
-    },[value,todos]);
+    }, [value, todos]);
 
-    const completeTodo = function (index: number): void {
+    const completeTodo = useCallback(function (index: number,todos:Array<ITodo>): void {
         const newTodos: ITodo[] = [...todos];
         newTodos[index].complete = !newTodos[index].complete;
         setTodos(newTodos);
-    };
+    },[todos]);
 
-    const deleteTodo = function (index: number, activeWeek: string,todos:Array<ITodo>): void {
+    const deleteTodo = function (index: number, activeWeek: string, todos: Array<ITodo>): void {
         let Filtered = todos.filter((item, ind) => {
             if (activeWeek !== 'All') {
                 return index !== ind;
@@ -148,7 +148,7 @@ function App(): JSX.Element {
 
                 <section className="mt-20 ">
                     <List data={todos} activeDay={weekDay} handleCheck={completeTodo} handleDelete={deleteTodo}
-                          />
+                    />
                     {(CountingProperty(todos, weekDay, "week")) ?
                         <button
                             className={`btn ${btnMode} mt-2 pull-right`}
