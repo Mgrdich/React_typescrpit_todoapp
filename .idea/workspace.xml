@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fec45a39-a302-48f6-a12a-efab92b6bc89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/src/components/filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/filter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/Style/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/Style/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoapp/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/Style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todoapp/src/components/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/src/components/list.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +104,7 @@
       <workItem from="1568729387403" duration="2929000" />
       <workItem from="1568827177785" duration="20000" />
       <workItem from="1570982956194" duration="363000" />
-      <workItem from="1573756330025" duration="750000" />
+      <workItem from="1573756330025" duration="1960000" />
     </task>
     <servers />
   </component>

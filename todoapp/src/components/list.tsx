@@ -20,7 +20,7 @@ const List:React.FC<any> = ({data, handleCheck, handleDelete, activeDay}:
                         null :
                         <>
                             <i className="fa fa-check withinListRight " onClick={() => handleCheck(index)}/>
-                            <i className="fa fa-times withinListRight-1" onClick={() => handleDelete(index)}/>
+                            <i className="fa fa-times withinListRight-1" onClick={() => handleDelete(index,activeDay,data)}/>
                         </>}</li>
                 )
             } else return null;

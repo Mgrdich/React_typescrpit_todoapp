@@ -1,9 +1,8 @@
 body {
   font-family: 'Indie Flower', cursive !important;
-  height: 100%;
 
   .main {
-    height: 100vh;
+    min-height: 100vh;
 
     h1 {
       &.text-danger {
@@ -12,6 +11,7 @@ body {
     }
     &.blueMode {
         background-color: $blueMode1 !important;
+        height: 100%;
       i {
         color: $blueMode2;
         &.fa-check {
@@ -33,6 +33,7 @@ body {
 
     &.darkMode {
         background-color: $darkMode2 !important;
+        height: 100%;
 
       i {
         color: $darkMode1;

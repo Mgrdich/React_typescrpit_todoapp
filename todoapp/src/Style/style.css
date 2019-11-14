@@ -20,17 +20,17 @@
   position: absolute; }
 
 body {
-  font-family: 'Indie Flower', cursive !important;
-  height: 100%; }
+  font-family: 'Indie Flower', cursive !important; }
 
 body .main {
-  height: 100vh; }
+  min-height: 100vh; }
 
 body .main h1.text-danger {
   display: inline-block; }
 
 body .main.blueMode {
-  background-color: #025aa5 !important; }
+  background-color: #025aa5 !important;
+  height: 100%; }
 
 body .main.blueMode i {
   color: #f0ad4e; }
@@ -48,7 +48,8 @@ body .main.blueMode .labelIcons i {
   color: #f0ad4e; }
 
 body .main.darkMode {
-  background-color: #1d1e1f !important; }
+  background-color: #1d1e1f !important;
+  height: 100%; }
 
 body .main.darkMode i {
   color: #8b0000; }
